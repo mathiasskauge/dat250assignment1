@@ -1,5 +1,5 @@
 FROM eclipse-temurin:11.0.20_8-jdk
-COPY settings.gradle.kts .
+COPY settings.gradle .
 COPY gradlew .
 RUN mkdir -p gradle/wrapper
 COPY gradle/* gradle/wrapper
