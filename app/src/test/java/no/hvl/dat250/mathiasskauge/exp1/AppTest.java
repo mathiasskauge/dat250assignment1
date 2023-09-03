@@ -4,8 +4,34 @@
 package no.hvl.dat250.mathiasskauge.exp1;
 
 import org.junit.jupiter.api.Test;
+
+import static no.hvl.dat250.mathiasskauge.exp1.App.convert;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
+
+    @Test
+    public void testInchesToMetersConversion() {
+        double result = convert(12, "in", "m");
+        assertEquals(0.3048, result, 0.001); // 12 inches = 0.3048 meters
+    }
+
+    @Test
+    public void testFeetToMetersConversion() {
+        double result = convert(5, "ft", "m");
+        assertEquals(1.524, result, 0.001); // 5 feet = 1.524 meters
+    }
+
+    @Test
+    public void testMilesToMetersConversion() {
+        double result = convert(2, "mi", "m");
+        assertEquals(3218.69, result, 0.01); // 2 miles = 3218.69 meters
+    }
+
+    @Test
+    public void testInvalidUnitConversion() {
+        double result = convert(10, "invalid", "m");
+        assertTrue(Double.isNaN(result)); // Should return Double.NaN for invalid unit
+    }
 
 }

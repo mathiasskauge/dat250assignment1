@@ -52,26 +52,39 @@ public class App {
                     double value = Double.parseDouble(ctx.formParam("value"));
                     String fromUnit = ctx.formParam("sunit");
                     String toUnit = ctx.formParam("tunit");
+
                     double result = convert(value, fromUnit, toUnit);
+
                     ctx.result(Double.toString(result));
                 })
                 .start(9000);
     }
 
-
-    private static double convert(double value, String fromUnit, String toUnit) {
+    /**
+     *Performs unit conversions (feet to meter, inch to feet etc.).
+     * @param value the number you want to convert
+     * @param fromUnit the unit you want to convert from
+     * @param toUnit the unit you want to convert into
+     * @return Result of conversion
+     */
+    public static double convert(double value, String fromUnit, String toUnit) {
         double inMeters;
         switch (fromUnit) {
             case "in":
                 inMeters = value * IN_TO_METER;
+                break;
             case "ft":
                 inMeters = value * FT_TO_METER;
+                break;
             case "mi":
                 inMeters = value * MI_TO_METER;
+                break;
             case "m":
                 inMeters = value;
+                break;
             default:
                 inMeters = Double.NaN;
+                break;
         }
         switch (toUnit) {
             case "in":
