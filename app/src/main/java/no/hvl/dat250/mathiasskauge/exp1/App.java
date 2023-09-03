@@ -52,34 +52,45 @@ public class App {
                     double value = Double.parseDouble(ctx.formParam("value"));
                     String fromUnit = ctx.formParam("sunit");
                     String toUnit = ctx.formParam("tunit");
-                    double inMeters;
-                    if (fromUnit.equals("in")) {
-                        inMeters = value * IN_TO_METER;
-                    } else if (fromUnit.equals("ft")) {
-                        inMeters = value * FT_TO_METER;
-                    } else if (fromUnit.equals("mi")) {
-                        inMeters = value * MI_TO_METER;
-                    } else if (fromUnit.equals("m")) {
-                        inMeters = value;
-                    } else {
-                        inMeters = Double.NaN;
-                    }
-                    double result;
-                    if (toUnit.equals("in")) {
-                        result = inMeters / IN_TO_METER;
-                    } else if (toUnit.equals("ft")) {
-                        result = inMeters / FT_TO_METER;
-                    } else if (toUnit.equals("mi")) {
-                        result = inMeters / MI_TO_METER;
-                    } else if (toUnit.equals("m")) {
-                        result = inMeters;
-                    } else {
-                        result = Double.NaN;
-                    }
+                    double result = convert(value, fromUnit, toUnit);
                     ctx.result(Double.toString(result));
                 })
                 .start(9000);
     }
 
 
+    private static double convert(double value, String fromUnit, String toUnit) {
+        double inMeters;
+        switch (fromUnit) {
+            case "in":
+                inMeters = value * IN_TO_METER;
+            case "ft":
+                inMeters = value * FT_TO_METER;
+            case "mi":
+                inMeters = value * MI_TO_METER;
+            case "m":
+                inMeters = value;
+            default:
+                inMeters = Double.NaN;
+        }
+        switch (toUnit) {
+            case "in":
+                return inMeters / IN_TO_METER;
+            case "ft":
+                return inMeters / FT_TO_METER;
+            case "mi":
+                return inMeters / MI_TO_METER;
+            case "m":
+                return inMeters;
+            default:
+                return Double.NaN;
+        }
+    }
+
 }
+
+
+
+
+
+
