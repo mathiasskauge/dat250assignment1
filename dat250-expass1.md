@@ -1,8 +1,7 @@
 # Dat250 expass 1
 
 Link to container image of the app on DockerHub:
-
-https://hub.docker.com/layers/mathiasskauge/dat250/latest/images/sha256-fe7055025e38def14e9e1d857e8cecdf1579a1f6b9a3bcbf1ec4ffdadf7e5048?context=repo
+https://hub.docker.com/repository/docker/mathiasskauge/dat250/general
 
 ### Technical problems I had
 
