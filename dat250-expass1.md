@@ -20,6 +20,8 @@ I wanted to check if I could het it to word from Dockerhub, but I havnt figured 
 ### Other tecnical problems
 I couldnt create the image with podman at first, but I just had to change to the correct filename of gradle.settings to get it to work
 
+I also couldnt build the image with podman while the Dockerfile was in the same folder as the app, so I had to move it out and then it worked
+
 
 
 
