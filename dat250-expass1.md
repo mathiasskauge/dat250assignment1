@@ -14,6 +14,7 @@ I tried to use docker to create the image but I couldnt work out how the Dockerf
 ### How I have validated the SDE
 
 I have checked that the localhost server works
+
 I wanted to check if I could het it to word from Dockerhub, but I havnt figured out how to do that yet
 
 ### Other tecnical problems
