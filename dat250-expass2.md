@@ -1,5 +1,5 @@
 
-# DAT250 Experiment Assignment 2 Report
+# DAT250 Expassignment 2 Report
 
 Link to my repository for the code: https://github.com/mathiasskauge/dat250-jpa-tutorial
 
@@ -28,24 +28,4 @@ Hibernate:
 
 
 
-
-
-I have also ensured that the included test case passes successfully.
-Inspection of Database Tables
-
-To inspect the database tables created by JPA, I used the following steps:
-
-    Database Access: I used a database client tool to access the database. In my case, I used MySQL Workbench.
-
-    Viewing Tables: In the database client, I connected to the database specified in my JPA configuration. I then navigated to the schema and viewed the tables created by JPA.
-
-
-
-    technical problems that you encountered during installation and use of Java Persistence Architecture (JPA) and how you resolved
-
-    a link to your code for experiment 2 above. Make sure the included test case passes!
-
-    an explanation of how you inspected the database tables and what tables were created. For the latter, you may provide screenshots.
-
-    any pending issues with this assignment that you did not manage to solve
 
