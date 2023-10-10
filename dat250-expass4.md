@@ -1,5 +1,7 @@
 # DAT250 Expassignment 4 Report
 
+UPDATE: The code now works, tested with postman and all tests pass
+
 Link to repository: 
 https://github.com/mathiasskauge/dat250-spring-counters-todos
 
