@@ -4,10 +4,10 @@ Link to repositories:
 (I made a new project for each to practise using the springboot initizialiser, 
 I also was not sure if having several @SpringBootApplication in a project would mess things up)
 
-https://github.com/mathiasskauge/dat250_expass5.1
-https://github.com/mathiasskauge/dat250expass5.2
-https://github.com/mathiasskauge/dat250expass5.3
-https://github.com/mathiasskauge/dat250expass5.4
+1. https://github.com/mathiasskauge/dat250_expass5.1
+2. https://github.com/mathiasskauge/dat250expass5.2
+3. https://github.com/mathiasskauge/dat250expass5.3
+4. https://github.com/mathiasskauge/dat250expass5.4
 
 Problems:
 
