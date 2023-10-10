@@ -12,13 +12,21 @@ I also was not sure if having several @SpringBootApplication in a project would 
 
 Problems:
 
-When I first 
+When I had several @SpringBootApplication in the same project I got an error saying it couldnt recognize which one was correct
+
+When I first tried to make the JAR in the intellij I could find where the har-file actually went, and I also got this error:
+
+![bilde](https://github.com/mathiasskauge/dat250assignment1/assets/143606784/94fb1e0d-37e9-48ee-9754-06ba87a6e71c)
+
+But then I used the command prompt and navigated to the project, and after running gradle build I could find the correct name with ls in target/libs
+Then I ran java -jar "correct JAR name" and it worked
 
 
-![bilde](https://github.com/mathiasskauge/dat250assignment1/assets/143606784/e5669a59-edb2-4f2a-b048-a2feb04272fb)
+![bilde](https://github.com/mathiasskauge/dat250assignment1/assets/143606784/3f4d2309-b3a6-4f54-aaca-ef6da23e0c6f)
 
 
-![bilde](https://github.com/mathiasskauge/dat250assignment1/assets/143606784/af275ab9-9ce0-4371-96ec-30d7e1c3521a)
+
+
 
 
 
